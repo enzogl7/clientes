@@ -15,7 +15,7 @@ import java.util.List;
 public class WebConfig {
 
     @Bean
-    public FilterRegistrationBean corsFilter() {
+    public FilterRegistrationBean<CorsFilter> corsFilterRegistration() {
         List<String> all = Arrays.asList("*");
 
         CorsConfiguration config = new CorsConfiguration();
